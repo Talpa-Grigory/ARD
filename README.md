@@ -9,30 +9,24 @@
 The requirements for this code are the same as [DiT](https://github.com/facebookresearch/DiT).
 
 ## Training
-Set variables `DATASET_NAME` and `SCHEDULE_TYPE`:
-- `DATASET_NAME` sets the dataset. We support FFHQ, CelebA, CelebA-HQ, and LSUN.
-We use 4 $\times$ L40S GPUs for FFHQ and LSUN datasets and 4 $\times$ RTX 3090 GPUs for celeba64.
-To train, run
 ```
-bash train_dbae.sh $DATASET_NAME $SCHEDULE_TYPE $STO
+bash train.sh
 ```
 
 ## Fine-tuning with GAN loss
-Set variables `DATASET_NAME` and `SCHEDULE_TYPE`:
-- `DATASET_NAME` sets the dataset. We support FFHQ, CelebA, CelebA-HQ, and LSUN.
-We use 4 $\times$ L40S GPUs for FFHQ and LSUN datasets and 4 $\times$ RTX 3090 GPUs for celeba64.
-To train, run
 ```
-bash train_dbae.sh $DATASET_NAME $SCHEDULE_TYPE $STO
+bash train.sh
 ```
 
 ## Generation
+```
+bash generate.sh
+```
 
 ## Performance
+We follow the evaluation protocol of [ADM](https://github.com/openai/guided-diffusion/tree/main/evaluations).
 
-
-
-## Reference
+## Citation
 If you find the code useful for your research, please consider citing
 ```bib
 @inproceedings{
