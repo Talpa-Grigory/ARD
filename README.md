@@ -10,6 +10,9 @@
 ## Dependencies
 The requirements for this code are the same as [DiT](https://github.com/facebookresearch/DiT).
 
+## Save ODE trajectories
+Make sure to save sufficient ODE trajectories using 'sample_trajectory.py'
+
 ## Training
 ```
 torchrun --nnodes=1 --nproc_per_node=8 train_ARD.py --model DiT-XL/2 --global-batch-size=64 --stack=6
