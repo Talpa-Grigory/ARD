@@ -1,1 +1,1 @@
-## [CVPR 2025 Oral] Autoregressive Distillation of Diffusion Transformers <br><sub><sub>Official This repository is a re-implementation of the original work (ARD), recreated based on the author's memory. </sub></sub>
+## [CVPR 2025 Oral] Autoregressive Distillation of Diffusion Transformers <br><sub><sub> This repository is a re-implementation of the original work (ARD), recreated based on the author's memory. </sub></sub>
