@@ -30,10 +30,10 @@ We follow the evaluation protocol of [ADM](https://github.com/openai/guided-diff
 ![Teaser image](./assets/figure2.JPG)
 | Model | Steps | Latency | FID | Inception Score | Precision | Recall | 
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| DiT/XL-2 | 25 | 493.5 (ms/img) | 2.89 | 230.22 | 0.797 | 0.572 |
-| Step Distillation (N=0) | 4 | 64.80 (ms/img) | 10.92 | 167.08 | 0.681 | 0.518 |
-| ARD (N=6) | 4 | 66.34 (ms/img) | 4.32 | 209.03 | 0.770 | 0.574 |
-| + GAN loss finetuning | 4 | 66.34 (ms/img) | 1.84 | 235.84 | 0.797 | 0.615 |
+| DiT/XL-2 | 25 | 493.5 | 2.89 | 230.22 | 0.797 | 0.572 |
+| Step Distillation (N=0) | 4 | 64.80 | 10.92 | 167.08 | 0.681 | 0.518 |
+| ARD (N=6) | 4 | 66.34 | 4.32 | 209.03 | 0.770 | 0.574 |
+| + GAN loss finetuning | 4 | 66.34 | 1.84 | 235.84 | 0.797 | 0.615 |
 
 ## Citation
 If you find the code useful for your research, please consider citing
