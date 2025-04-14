@@ -22,7 +22,7 @@ TODO
 
 ## Generation
 ```
-torchrun --nnodes=1 --nproc_per_node=1 --master_port $(shuf -i 2000-65000 -n 1) sample_ARD.py --stack=6 --ckpt_path={$PATH}/checkpoints/0300000.pt"
+torchrun --nnodes=1 --nproc_per_node=1 sample_ARD.py --stack=6 --ckpt_path={$PATH}/checkpoints/0300000.pt"
 ```
 
 ## Performance
