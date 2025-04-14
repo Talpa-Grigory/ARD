@@ -11,7 +11,7 @@
 The requirements for this code are the same as [DiT](https://github.com/facebookresearch/DiT).
 
 ## Save ODE trajectories
-Make sure to save sufficient ODE trajectories using 'sample_trajectory.py'
+Make sure to save sufficient ODE trajectories using `sample_trajectory.py`
 
 ## Training
 ```
