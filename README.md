@@ -25,6 +25,7 @@ bash generate.sh
 
 ## Performance
 We follow the evaluation protocol of [ADM](https://github.com/openai/guided-diffusion/tree/main/evaluations).
+![Teaser image](./assets/figure2.JPG)
 
 ## Citation
 If you find the code useful for your research, please consider citing
