@@ -12,17 +12,17 @@ The requirements for this code are the same as [DiT](https://github.com/facebook
 
 ## Training
 ```
-bash train.sh
+torchrun --nnodes=1 --nproc_per_node=8 train_ARD.py --model DiT-XL/2 --global-batch-size=64 --stack=6
 ```
 
 ## Fine-tuning with GAN loss
 ```
-bash train.sh
+TODO
 ```
 
 ## Generation
 ```
-bash generate.sh
+torchrun --nnodes=1 --nproc_per_node=1 --master_port $(shuf -i 2000-65000 -n 1) sample_ARD.py --stack=6 --ckpt_path={$PATH}/checkpoints/0300000.pt"
 ```
 
 ## Performance
