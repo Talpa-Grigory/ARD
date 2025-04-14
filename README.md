@@ -26,7 +26,10 @@ bash generate.sh
 ## Performance
 We follow the evaluation protocol of [ADM](https://github.com/openai/guided-diffusion/tree/main/evaluations).
 ![Teaser image](./assets/figure2.JPG)
-
+| 헤더1 | 헤더2 | 헤더3 |
+|-------|-------|-------|
+| 데이터1 | 데이터2 | 데이터3 |
+| 데이터4 | 데이터5 | 데이터6 |
 
 ## Citation
 If you find the code useful for your research, please consider citing
