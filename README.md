@@ -35,6 +35,8 @@ We follow the evaluation protocol of [ADM](https://github.com/openai/guided-diff
 | ARD (N=6) | 4 | 66.34 | 4.32 | 209.03 | 0.770 | 0.574 |
 | + GAN loss finetuning | 4 | 66.34 | 1.84 | 235.84 | 0.797 | 0.615 |
 
+![Teaser image](./assets/figure3.JPG)
+
 ## Citation
 If you find the code useful for your research, please consider citing
 ```bib
