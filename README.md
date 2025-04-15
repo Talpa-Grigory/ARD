@@ -11,7 +11,7 @@
 The requirements for this code are the same as [DiT](https://github.com/facebookresearch/DiT).
 
 ## Save ODE trajectories
-Make sure to save sufficient ODE trajectories using `sample_trajectory.py`, and ensure they correspond to the dataloader for the subsequent training procedure.
+Make sure to save a sufficient number of ODE trajectories using `sample_trajectory.py`, and ensure they match the dataloader used in the subsequent training procedure (see the `--data-path` argument in the training script).
 
 ## Training
 ```
