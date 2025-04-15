@@ -22,6 +22,7 @@ torchrun --nnodes=1 --nproc_per_node=8 train_ARD.py --model DiT-XL/2 --global-ba
 
 ## Fine-tuning with GAN loss
 This procedure is performed using 8 A100 GPUs over a few hours.
+Since this procedure also uses real data, it needs to properly set the path to the actual ImageNet dataset using the --real-data-path argument.
 
 ```
 torchrun --nnodes=1 --nproc_per_node=8 train_ARD_gan.py --model DiT-XL/2 --global-batch-size=48 --stack=6 --ckpt_path={$PATH}/checkpoints/0300000.pt"
