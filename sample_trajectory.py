@@ -122,13 +122,11 @@ def main(args):
                 pred_z0, _ = traj["pred_z0"].chunk(2, dim=0)
                 y,_ = traj["y"].chunk(2, dim=0)
 
-
-
                 ## Save as npzs for latents
                 zt = zt.to("cpu").numpy()
                 pred_z0 = pred_z0.to("cpu").numpy()
-                for k, zt_k in enumerate(zt):
-                    np.savez(f"{args.sample_dir}/latent_trajectory/zt/{t}/{y[k]}/{seed}_{count+k:06d}.npz", zt=zt_k) #.to("cpu").numpy())   
+                # for k, zt_k in enumerate(zt):
+                #     np.savez(f"{args.sample_dir}/latent_trajectory/zt/{t}/{y[k]}/{seed}_{count+k:06d}.npz", zt=zt_k) #.to("cpu").numpy())
                 for k, pred_z0_k in enumerate(pred_z0):
                     np.savez(f"{args.sample_dir}/latent_trajectory/pred_z0/{t}/{y[k]}/{seed}_{count+k:06d}.npz", pred_z0=pred_z0_k) #.to("cpu").numpy())
 
