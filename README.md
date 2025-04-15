@@ -14,11 +14,15 @@ The requirements for this code are the same as [DiT](https://github.com/facebook
 Make sure to save a sufficient number of ODE trajectories using `sample_trajectory.py`, and ensure they match the dataloader used in the subsequent training procedure (see the `--data-path` argument in the training script).
 
 ## Training
+This procedure is performed using 8 A100 GPUs for 2 days.
+
 ```
 torchrun --nnodes=1 --nproc_per_node=8 train_ARD.py --model DiT-XL/2 --global-batch-size=64 --stack=6
 ```
 
 ## Fine-tuning with GAN loss
+This procedure is performed using 8 A100 GPUs over a few hours.
+
 ```
 torchrun --nnodes=1 --nproc_per_node=8 train_ARD_gan.py --model DiT-XL/2 --global-batch-size=48 --stack=6 --ckpt_path={$PATH}/checkpoints/0300000.pt"
 ```
