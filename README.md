@@ -20,7 +20,7 @@ torchrun --nnodes=1 --nproc_per_node=8 train_ARD.py --model DiT-XL/2 --global-ba
 
 ## Fine-tuning with GAN loss
 ```
-TODO
+torchrun --nnodes=1 --nproc_per_node=8 train_ARD_gan.py --model DiT-XL/2 --global-batch-size=48 --stack=6 --ckpt_path={$PATH}/checkpoints/0300000.pt --ld=10.0"
 ```
 
 ## Generation
