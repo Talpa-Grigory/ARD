@@ -480,14 +480,11 @@ if __name__ == "__main__":
     parser.add_argument("--ckpt-every", type=int, default=10_000)
 
     parser.add_argument("--ckpt", type=int, default=1)
-    parser.add_argument("--ckpt_path", type=str, default="/{Path}/results/checkpoints/0300000.pt") ## Set it pre-trained ckpt with regression loss
-    parser.add_argument("--steps", type=int, default=2)
+    parser.add_argument("--ckpt_path", type=str, default="{$PATH}/results/checkpoints/0300000.pt") ## Set it pre-trained ckpt with regression loss
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--dis_lr", type=float, default=1e-3)
     parser.add_argument("--stack", type=int, default=6)
     parser.add_argument("--ld", type=float, default=10.0)
-    parser.add_argument("--hinge", type=bool, default=False)
-    parser.add_argument("--newnew", type=bool, default=False)
     parser.add_argument("--grad_clip", type=float, default=1.0) ## try 0.7 or 0.4 if unstable
 
     args = parser.parse_args()
