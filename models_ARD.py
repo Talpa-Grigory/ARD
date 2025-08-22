@@ -662,6 +662,8 @@ def DiT_B_4(**kwargs):
 def DiT_B_8(**kwargs):
     return DiT(depth=12, hidden_size=768, patch_size=8, num_heads=12, **kwargs)
 
+def DiT_B_16(**kwargs):
+    return DiT(depth=12, hidden_size=768, patch_size=16, num_heads=12, **kwargs)
 
 def DiT_S_2(**kwargs):
     return DiT(depth=12, hidden_size=384, patch_size=2, num_heads=6, **kwargs)
