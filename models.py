@@ -334,6 +334,12 @@ def DiT_XL_4(**kwargs):
 def DiT_XL_8(**kwargs):
     return DiT(depth=28, hidden_size=1152, patch_size=8, num_heads=16, **kwargs)
 
+def DiT_XL_16(**kwargs):
+    return DiT(depth=28, hidden_size=1152, patch_size=8, num_heads=16, **kwargs)
+
+def DiT_XL_16(**kwargs):
+    return DiT(depth=28, hidden_size=1152, patch_size=8, num_heads=32, **kwargs)
+
 def DiT_L_2(**kwargs):
     return DiT(depth=24, hidden_size=1024, patch_size=2, num_heads=16, **kwargs)
 
